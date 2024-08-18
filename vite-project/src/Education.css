@@ -1,0 +1,122 @@
+
+.education-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-item {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+    cursor: pointer;
+    position: relative; 
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-title {
+    padding: 20px 25px;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Quicksand", Arial, sans-serif;
+    background-color: #2c98f0;
+    color: #fff;
+}
+
+.education-titles {
+    padding: 20px 25px;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Quicksand", Arial, sans-serif;
+    background-color: #2c98f0;
+    color: #fff;
+}
+
+.education-description {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.education-arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    transition: transform 0.3s ease;
+}
+
+.education-arrow.open {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.education-arrow.close {
+    transform: translateY(-50%);
+}
+
+.Education {
+    margin-left: 320px;
+    padding: 30px;
+    width: 70%;
+    font-family: Arial, sans-serif;
+}
+
+
+@media (max-width: 1024px) {
+    .Education {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .education-section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-item {
+        font-size: 16px; 
+    }
+
+    .education-description {
+        font-size: 14px;
+    }
+
+    .education-arrow {
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-item {
+        font-size: 14px; 
+    }
+
+    .education-description {
+        font-size: 12px;
+    }
+
+    .education-arrow {
+        right: 5px;
+        border-width: 4px; 
+    }
+
+    .Education {
+        padding: 20px;
+        width: 100%;
+        margin-left: 0;
+    }
+}

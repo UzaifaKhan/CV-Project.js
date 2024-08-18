@@ -1,0 +1,131 @@
+
+.recent-work-container {
+    margin-left: 320px;
+    padding: 30px;
+    width: 70%;
+    font-family: Arial, sans-serif;
+}
+
+.work-categories {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.work-categories a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-item {
+    position: relative;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 8px;
+}
+
+.project-item:hover .overlay {
+    height: 100%;
+    color: white;
+}
+
+.overlay a {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+
+.overlay p {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    .recent-work-container {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .work-categories a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .work-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .work-categories a {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .overlay a {
+        font-size: 18px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .overlay p {
+        font-size: 14px;
+        bottom: 10px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recent-work-container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .work-categories a {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .overlay a {
+        font-size: 16px;
+    }
+
+    .overlay p {
+        font-size: 12px;
+    }
+}

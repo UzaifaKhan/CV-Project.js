@@ -1,0 +1,186 @@
+.expertise-container {
+    text-align: center;
+    padding: 40px;
+    margin-left: 320px;
+    width: calc(100% - 320px);
+    transition: transform 1s ease-in;
+    box-sizing: border-box; 
+  }
+  
+  .expertise-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: transform 1s ease;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap; 
+  }
+  
+  .expertise-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 140px;
+    height: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-bottom: 4px solid;
+  }
+  
+  .expertise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-bottom-color: lightgray;
+  }
+  
+  .expertise-card svg {
+    font-size: 36px; 
+    color: black; 
+    margin-bottom: 10px; 
+  }
+  
+  .expertise-items:hover {
+    transform: translateY(-10px);
+  }
+  
+  .heading {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    word-spacing: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+  
+  .skills {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  
+  h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .progress-container {
+    padding-top: 30px;
+    border-radius: 8px;
+    border-bottom: 4px solid; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    height: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .bar {
+    height: 100%;
+    border-radius: 10px;
+    background-color: currentColor; 
+    width: 0;
+    animation: progress-animation 2s forwards; 
+  }
+  
+  .bar.blue {
+    color: blue; 
+  }
+  
+  .text {
+    font-size: 12px;
+    color: #333;
+    margin-left: 5px;
+  }
+  
+  @keyframes progress-animation {
+    from {
+      width: 0;
+    }
+    to {
+      width: var(--progress-width); 
+    }
+  }
+  
+  .Skills {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  
+  .progress-container:hover {
+    transform: translateY(-10px);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .expertise-container {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .expertise-items {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .expertise-card {
+      width: 80%;
+      margin: 10px;
+    }
+  }
+  
+ 
+  @media (max-width: 480px) {
+    .skills {
+      font-size: 24px;
+    }
+  
+    .heading {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .skills {
+      font-size: 20px;
+    }
+  
+    .heading {
+      font-size: 12px;
+    }
+  
+    .expertise-card {
+      width: 90%;
+      margin: 5px;
+    }
+  
+    .progress-container {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+  

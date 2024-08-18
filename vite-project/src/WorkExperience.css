@@ -1,0 +1,129 @@
+
+.timeline {
+    margin-left: 320px;
+    padding: 30px;
+    width: 70%;
+    font-family: Arial, sans-serif;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+.timeline-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #2c98f0; 
+}
+
+.timeline-content {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.timeline-content span {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #777;
+}
+
+.timeline-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 20px;
+    height: calc(100% - 50px);
+    width: 2px;
+    background-color: #ccc;
+}
+
+
+@media (max-width: 1024px) {
+    .timeline {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .timeline-item {
+        flex-direction: column; 
+    }
+
+    .timeline-icon {
+        margin-bottom: 10px; 
+    }
+
+    .timeline-content {
+        box-shadow: none; 
+    }
+
+    .timeline-item:not(:last-child)::before {
+        left: 50%;
+        transform: translateX(-50%); 
+        height: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-content h3 {
+        font-size: 1em; 
+    }
+
+    .timeline-content span {
+        font-size: 0.8em;
+    }
+
+    .timeline-content p {
+        font-size: 0.85em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .timeline-icon {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px; 
+    }
+
+    .timeline-content h3 {
+        font-size: 0.9em;
+    }
+
+    .timeline-content span {
+        font-size: 0.7em; 
+    }
+
+    .timeline-content p {
+        font-size: 0.8em; 
+    }
+
+    .timeline-item:not(:last-child)::before {
+        left: 50%;
+        transform: translateX(-50%);
+        height: calc(100% - 10px); 
+    }
+}
