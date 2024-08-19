@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "http://{UzaifaKhan}.github.io/{https://github.com/UzaifaKhan/CV-Project.js}",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
