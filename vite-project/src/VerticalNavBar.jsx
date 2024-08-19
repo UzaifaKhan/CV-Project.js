@@ -21,9 +21,7 @@ const VerticalNavbar = () => {
         <li><a href="#contact">Contact</a></li>
       </ul>
       <footer className='footer'>
-        <p>
-          © Copyright 2024 All rights reserved. <br />
-          Made with ❤️ by Uzaifa Khan <br />
+        <p>© Copyright 2024 All rights reserved. <br />Made with  by Uzaifa Khan <br />
         </p>
       </footer>
     </nav>

@@ -15,6 +15,7 @@ const Content = () => {
             building interactive and responsive websites. I'm pretty much an expert in HTML, CSS,
             Bootstrap, Javascript, ES6, React, Redux, Node.js, and MongoDB. Further, my other skills
             include problem-solving, effective communication, leadership, and being a team player.
+          
           </p>
         </div>
       </section>
