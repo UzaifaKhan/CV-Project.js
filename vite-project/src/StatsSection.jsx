@@ -7,7 +7,7 @@ const stats = [
   { number: 5, label: "PARTNERS" },
 ];
 
-const StatsSection= () => {
+const StatsSection = () => {
   const statsContainerRef = useRef(null);
 
   useEffect(() => {
@@ -35,7 +35,9 @@ const StatsSection= () => {
       }
     });
 
-    observer.observe(statsContainerRef.current);
+    if (statsContainerRef.current) {
+      observer.observe(statsContainerRef.current);
+    }
 
     return () => {
       if (observer && statsContainerRef.current) {

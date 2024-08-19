@@ -11,11 +11,10 @@ const Content = () => {
           <h3 style={{textAlign:'left',fontSize:'14px',color:'grey'}}>ABOUT ME</h3>
           <h1 style={{textAlign:'left',fontSize:'28px'}}>Who Am I?</h1>
           <p>
-          I'm a Full-stack developer having 5+ years of experience in the IT industry, specializing in
-building interactive and responsive websites. I'm pretty much an expert in HTML, CSS,
-Bootstrap, Javascript, ES6, React, Redux, Node.js, and MongoDB. Further, my other skills
-include problem-solving, effective communication, leadership, and being a team player.
-
+            I'm a Full-stack developer having 5+ years of experience in the IT industry, specializing in
+            building interactive and responsive websites. I'm pretty much an expert in HTML, CSS,
+            Bootstrap, Javascript, ES6, React, Redux, Node.js, and MongoDB. Further, my other skills
+            include problem-solving, effective communication, leadership, and being a team player.
           </p>
         </div>
       </section>

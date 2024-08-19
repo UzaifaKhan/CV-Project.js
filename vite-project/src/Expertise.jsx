@@ -17,7 +17,7 @@ const skills = [
 ];
 
 const progressData = [
-  { label: 'Web ', percentage: '90%', color: 'dodgerblue' },
+  { label: 'Web', percentage: '90%', color: 'dodgerblue' },
   { label: 'HTML5', percentage: '85%', color: 'gold' },
   { label: 'WordPress', percentage: '70%', color: 'mediumseagreen' },
   { label: 'jQuery', percentage: '60%', color: 'tomato' },
@@ -33,9 +33,9 @@ const Expertise = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.style.animation = 'none'; 
-            void entry.target.offsetWidth; 
-            entry.target.style.animation = ''; 
+            entry.target.style.animation = 'none';
+            void entry.target.offsetWidth;
+            entry.target.style.animation = '';
             entry.target.classList.add('animate');
           } else {
             entry.target.classList.remove('animate');

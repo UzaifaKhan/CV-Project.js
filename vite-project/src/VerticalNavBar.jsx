@@ -7,7 +7,7 @@ const VerticalNavbar = () => {
     <nav className="vertical-navbar">
       <div className='bio'>
         <img className='img' src={img} alt="Profile" id='home'/>
-        <h3>MUHAMMAD USMAN <br />GHANI</h3>
+        <h3>MUHAMMAD USMAN <br /> GHANI</h3>
         <h4 style={{color:'white'}}>Senior Software Engineer</h4>
       </div>
       <ul>
@@ -21,7 +21,9 @@ const VerticalNavbar = () => {
         <li><a href="#contact">Contact</a></li>
       </ul>
       <footer className='footer'>
-        <p>© Copyright 2024 All rights reserved. <br />Made with  by Uzaifa Khan <br />
+        <p>
+          © Copyright 2024 All rights reserved. <br />
+          Made with ❤️ by Uzaifa Khan <br />
         </p>
       </footer>
     </nav>
