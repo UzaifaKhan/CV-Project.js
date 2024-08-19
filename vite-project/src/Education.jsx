@@ -53,6 +53,6 @@ function Education() {
       </div>
     </div>
   );
-}
+};
 
 export default Education;
